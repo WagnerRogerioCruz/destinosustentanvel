@@ -113,13 +113,24 @@
             font-size: 1.1rem;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 20px;
+            margin-top: 100px;
+            text-decoration: none;
+            display: inline-block;
         }
 
-/* --- FEATURES COM GRID LAYOUT --- */
+        #destino {
+            margin-top: 60px;
+        }
+
+        #destinos {
+            margin-top: 60px;
+        }   
+
+        /* --- FEATURES COM GRID LAYOUT --- */
         .features-section h2 {
             text-align: center;
         }
+
         .icon {
             text-align: center;
             margin-bottom: 12px;
@@ -135,9 +146,16 @@
             max-width: 250px;
             margin: 0 auto;
         }
+
+        .feature-card a {
+            text-decoration: none;
+            color: black;
+        }
+
         .feature-card:hover {
             transform: translateY(-10px);
             cursor: pointer;
+
         }   
         .features-grid {
             display: grid;
@@ -154,11 +172,12 @@
             max-width: cover;
             text-align: justify;
         }
+
         /* --- FOOTER COM FLEXBOX --- */
         .main-footer {
             background: #1e293b;
             color: white;
-            padding: 40px 0;
+            padding: 10px 0;
         }
 
         .footer-content {
@@ -166,6 +185,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            font-size: 10px;
             gap: 20px;
         }
 
@@ -202,8 +222,8 @@
             </div>
                 <nav>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
                     <li><a href="#">Dicas</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
@@ -216,8 +236,8 @@
         <section id="incio" class="hero-section">
             <div class="container">
                 <h1>Turismo Sustentável: Descubra Destinos Incríveis e Contribua para um Mundo Melhor</h1>
-                <p>Explore destinos incríveis, descubra dicas de viagem sustentável e faça a diferença no mundo do turismo.</p>
-                <button class="cta-button">Saiba Mais</button>
+                <p>Explore novas formas de viajar com responsabilidade ambiental e viva experiências que geram impacto social positivo.</p>
+                <a href="#destino" class="cta-button">Destinos sustentáveis</a>
             </div>
         </section>
 
@@ -249,9 +269,65 @@
             </div>
             <div class="article-card">
             <p>A certificação de destinos é gerida por órgãos como a <span><a href="https://www.biospheresustainable.com/pt/37/biosphere-sustainable-destinations" target="_blank">Biosphere Sustainable</a></span>, que ajuda territórios a otimizar sua gestão sustentável. Destinos certificados recebem apoio para melhorar práticas, promover turismo responsável e alcançar reconhecimento global, atraindo visitantes conscientes e impulsionando o desenvolvimento sustentável.</p>
+            <span id="destino"></span>
+            </div>
+        </section>
+
+        
+        <section id="destinos">
+            <div class="container">
+                <h2>Destinos Sustentáveis</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">🏞️</div>
+                        <h3>Parque Nacional do Iguaçu</h3>
+                        <a href="https://cataratasdoiguacu.com.br/" target="_blank">Maravilha natural com práticas de conservação e turismo responsável.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏝️</div>
+                        <h3>Fernando de Noronha</h3>
+                        <a href="https://www.noronha.pe.gov.br/" target="_blank">Ilha paradisíaca que equilibra turismo e preservação ambiental.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏕️</div>
+                        <h3>Chapada Diamantina</h3>
+                        <a href="https://parnachapadadiamantina.blogspot.com/" target="_blank">Destino de ecoturismo com foco em conservação e cultura local.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏞️</div>
+                        <h3>Serra da Canastra</h3>
+                        <a href="https://www.serradacanastra.com.br/" target="_blank">Parque nacional que promove turismo sustentável e conservação.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏝️</div>
+                        <h3>Abrolhos</h3>
+                        <a href="https://www.abrolhos.com.br/" target="_blank">Arquipélago com rica biodiversidade e práticas de turismo responsável.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏕️</div>
+                        <h3>Serra do Cipó</h3>
+                        <a href="https://vemprocipo.com.br/" target="_blank">Parque nacional que promove turismo sustentável e conservação.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏞️</div>
+                        <h3>Parque Nacional da Tijuca</h3>
+                        <a href="https://parquenacionaldatijuca.rio/" target="_blank">Floresta urbana que equilibra turismo e preservação ambiental.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏝️</div>
+                        <h3>Ilha do Mel</h3>
+                        <a href="https://www.iat.pr.gov.br/Pagina/Parque-Estadual-da-Ilha-do-Mel-PEIM target="_blank">Destino de ecoturismo com foco em conservação e cultura local.</a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🏕️</div>
+                        <h3>Bonito</h3>
+                        <a href="https://www.turismo.bonito.ms.gov.br/" target="_blank">Destino de ecoturismo com foco em conservação e cultura local.</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    
 
     <!-- FOOTER: Use Flexbox para organizar os links -->
     <footer class="main-footer">
