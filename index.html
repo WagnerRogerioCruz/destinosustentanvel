@@ -10,6 +10,66 @@
             margin: 0;
             background-color: rgba(200, 244, 244, 0.8);
         }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .main-header {
+        background: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        }
+
+        .flex-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e293b;
+            font-weight: 600;
+        }
+        /* --- HERO SECTION --- */
+        /* A Seção Hero é o cartão de visitas do seu site! */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./imagens/br-sustentabilidade.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+/* --- FEATURES COM GRID LAYOUT --- */
         .features-section h2 {
             text-align: center;
         }
@@ -44,9 +104,9 @@
     <!-- HEADER: Use Flexbox para alinhar a logo e o menu -->
     <header class="main-header">
         <div class="container flex-nav">
-            <div class="logo"><img src="./imagens/logo.jpg"></div>  
+            <div class="logo"><img src="./imagens/logo.jpg" width="150px"></div>  
                 <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Destinos</a></li>
                     <li><a href="#">Dicas</a></li>
