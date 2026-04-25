@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo sustentável</title>
+    <style>
+        body {
+            font-family: sans-serif, Arial, Helvetica;
+            margin: 0;
+            background-color: rgba(200, 244, 244, 0.8);
+        }
+        .features-section h2 {
+            text-align: center;
+        }
+        .icon {
+            text-align: center;
+            margin-bottom: 12px;
+            font-size: 3rem;
+        }
+        .feature-card {
+            background-color: rgba(199, 243, 243, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            cursor: pointer;
+        }   
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- HEADER: Use Flexbox para alinhar a logo e o menu -->
+    <header class="main-header">
+        <div class="container flex-nav">
+            <div class="logo"><img src="./imagens/logo.jpg"></div>  
+                <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Destinos</a></li>
+                    <li><a href="#">Dicas</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION: O destaque da página -->
+        <section id="incio" class="hero-section">
+            <div class="container">
+                <h1>Turismo Sustentável: Descubra Destinos Incríveis e Contribua para um Mundo Melhor</h1>
+                <p>Explore destinos incríveis, descubra dicas de viagem sustentável e faça a diferença no mundo do turismo.</p>
+                <button class="cta-button">Saiba Mais</button>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION: Use Grid Layout para esta seção -->
+        <section id="pilares" class="features-section">
+            <div class="container">
+                <h2>Pilares do Turismo Sustentável</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">💧⚡</div>
+                        <h3>Gestão de Recursos:</h3>
+                        <p>Uso responsável de água e energia.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💰👥</div>
+                        <h3>Respeito Local:</h3>
+                        <p>Envolvimento e benefício econômico das comunidades.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🌿🏞️</div>
+                        <h3>Conservação:</h3>
+                        <p>Proteção de áreas naturais e biodiversidade.</p>
+                    </div>
+            </div>
+            
+            <h2>Por que turismo sustentável é a melhor escolha?</h2>
+            <p>Um "destino sustentável" é um local que equilibra turismo com preservação ambiental, valorização cultural e benefícios econômicos para a comunidade local. Esses destinos gerenciam o impacto dos visitantes, promovem energia limpa, reduzem plásticos e protegem ecossistemas, garantindo o desenvolvimento a longo prazo.</p>
+            
+            <p>A certificação de destinos é gerida por órgãos como a <span><a href="https://www.biospheresustainable.com/pt/37/biosphere-sustainable-destinations" target="_blank">Biosphere Sustainable</a></span>, que ajuda territórios a otimizar sua gestão sustentável. Destinos certificados recebem apoio para melhorar práticas, promover turismo responsável e alcançar reconhecimento global, atraindo visitantes conscientes e impulsionando o desenvolvimento sustentável.</p>
+        </section>
+    </main>
+
+    <!-- FOOTER: Use Flexbox para organizar os links -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 MinhaMarca Inc. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+</body>
+</html>
