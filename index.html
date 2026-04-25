@@ -35,8 +35,8 @@
         .logo {
             background-color: rgb(200, 244, 244);
             border-radius: 50%;
-            width: 125px;
-            height: 125px;
+            width: 120px;
+            height: 120px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -48,7 +48,7 @@
             top: -35px;
             left: -35px;
             width: 200px;
-            height: 200px;
+            height: 220px;
             pointer-events: none;
             z-index: 101;
         }
@@ -56,14 +56,14 @@
         .logo svg text {
             fill: #006400;
             font-family: 'Comic Sans MS', cursive;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 600;
         }
 
         .logo img {
             display: block;
-            width: 125px;
-            height: 125px;
+            width: 100px;
+            height: 100px;
             object-fit: cover;
             border-radius: 50%;
             background-color: transparent;
@@ -80,6 +80,16 @@
             text-decoration: none;
             color: #1e293b;
             font-weight: 600;
+        }
+        /* --- RESPONSIVE PARA CELULAR --- */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 10px;
+            }
+
+            .nav-links a {
+                font-size: 0.9rem;
+            }
         }
         /* --- HERO SECTION --- */
         /* A Seção Hero é o cartão de visitas do seu site! */
@@ -176,11 +186,11 @@
     <header class="main-header">
         <div class="container flex-nav">
             <div class="logo">
-                <img src="./imagens/logo.jpg" width="130px">
+                <img src="./imagens/logo.jpg">
                 <svg viewBox="0 0 200 200">
                     <defs>
-                        <path id="top-circle" d="M 30 100 A 70 70 0 0 1 170 100" />
-                        <path id="bottom-circle" d="M 30 100 A 70 70 0 0 0 170 100" />
+                        <path id="top-circle" d="M 25 100 A 70 70 0 0 1 170 100" />
+                        <path id="bottom-circle" d="M 25 80 A 70 70 0 0 0 170 80" />
                     </defs>
                     <text text-anchor="middle">
                         <textPath href="#top-circle" startOffset="50%">Destino</textPath>
