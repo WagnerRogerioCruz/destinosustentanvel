@@ -136,6 +136,7 @@
             margin-bottom: 12px;
             font-size: 3rem;
         }
+
         .feature-card {
             background-color: rgba(199, 243, 243, 0.8);
             padding: 30px;
@@ -147,16 +148,39 @@
             margin: 0 auto;
         }
 
-        .feature-card a {
+        /*.feature-card a {
+            text-decoration: none;
+            color: black;
+        }*/
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            /*cursor: pointer;*/
+
+        }   
+
+        .feature-card2 {
+            background-color: rgba(199, 243, 243, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.3s;
+            max-width: 250px;
+            margin: 0 auto;
+        }
+
+        .feature-card2 a {
             text-decoration: none;
             color: black;
         }
 
-        .feature-card:hover {
+        .feature-card2:hover {
             transform: translateY(-10px);
             cursor: pointer;
 
         }   
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -173,6 +197,35 @@
             text-align: justify;
         }
 
+        /* --- SEÇÃO DE CONTATO (CORRIGIDA) --- */
+        #contato {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #contato h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        #contato ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #contato li {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            font-weight: 600;
+        }
         /* --- FOOTER COM FLEXBOX --- */
         .main-footer {
             background: #1e293b;
@@ -223,9 +276,9 @@
                 <nav>
                 <ul class="nav-links">
                     <li><a href="#">Início</a></li>
-                    <li><a href="#destinos">Destinos</a></li>
                     <li><a href="#">Dicas</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -278,47 +331,47 @@
             <div class="container">
                 <h2>Destinos Sustentáveis</h2>
                 <div class="features-grid">
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏞️</div>
                         <h3>Parque Nacional do Iguaçu</h3>
                         <a href="https://cataratasdoiguacu.com.br/" target="_blank">Maravilha natural com práticas de conservação e turismo responsável.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏝️</div>
                         <h3>Fernando de Noronha</h3>
                         <a href="https://www.noronha.pe.gov.br/" target="_blank">Ilha paradisíaca que equilibra turismo e preservação ambiental.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏕️</div>
                         <h3>Chapada Diamantina</h3>
                         <a href="https://parnachapadadiamantina.blogspot.com/" target="_blank">Destino de ecoturismo com foco em conservação e cultura local.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏞️</div>
                         <h3>Serra da Canastra</h3>
                         <a href="https://www.serradacanastra.com.br/" target="_blank">Parque nacional que promove turismo sustentável e conservação.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏝️</div>
                         <h3>Abrolhos</h3>
                         <a href="https://www.abrolhos.com.br/" target="_blank">Arquipélago com rica biodiversidade e práticas de turismo responsável.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏕️</div>
                         <h3>Serra do Cipó</h3>
                         <a href="https://vemprocipo.com.br/" target="_blank">Parque nacional que promove turismo sustentável e conservação.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏞️</div>
                         <h3>Parque Nacional da Tijuca</h3>
                         <a href="https://parquenacionaldatijuca.rio/" target="_blank">Floresta urbana que equilibra turismo e preservação ambiental.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏝️</div>
                         <h3>Ilha do Mel</h3>
                         <a href="https://www.iat.pr.gov.br/Pagina/Parque-Estadual-da-Ilha-do-Mel-PEIM target="_blank">Destino de ecoturismo com foco em conservação e cultura local.</a>
                     </div>
-                    <div class="feature-card">
+                    <div class="feature-card2">
                         <div class="icon">🏕️</div>
                         <h3>Bonito</h3>
                         <a href="https://www.turismo.bonito.ms.gov.br/" target="_blank">Destino de ecoturismo com foco em conservação e cultura local.</a>
@@ -326,6 +379,20 @@
                 </div>
             </div>
         </section>
+
+        <section id="contato">
+            <div class="container">
+                <h1>Entre em contato conosco.</h1>
+                <ul>
+                    <li>email:pagty@ght.com.br</li>
+                    <li>Telefone:21-5555555</li>
+                    <li>WhatsApp: 21-999999999</li>
+                </ul>
+
+            </div>
+
+        </section>
+
     </main>
     
 
