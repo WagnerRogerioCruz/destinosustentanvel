@@ -1,0 +1,255 @@
+
+body {
+    font-family: sans-serif, Arial, Helvetica;
+    margin: 0;
+    background-color: rgba(200, 244, 244, 0.8);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header {
+    background-color: rgb(200, 244, 244);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-color: rgb(200, 244, 244);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo svg {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    width: 200px;
+    height: 220px;
+    pointer-events: none;
+    z-index: 101;
+}
+
+.logo svg text {
+    fill: #006400;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.logo img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+/* --- RESPONSIVE PARA CELULAR --- */
+@media (max-width: 768px) {
+        .nav-links {
+            gap: 10px;
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+        }
+}
+
+/* --- HERO SECTION --- */
+/* A Seção Hero é o cartão de visitas do seu site! */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./imagens/br-sustentabilidade.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.cta-button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 100px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#destinos {
+    padding-top: 150px;
+}   
+
+#dicas {
+    padding-top: 150px;
+}
+
+/* --- FEATURES COM GRID LAYOUT --- */
+.features-section h2 {
+    text-align: center;
+}
+
+.icon {
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 3rem;
+}
+
+.feature-card {
+    background-color: rgba(199, 243, 243, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}   
+
+.feature-card2 {
+    background-color: rgba(199, 243, 243, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.feature-card2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.feature-card2:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}   
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.article-card {
+    background-color: rgba(199, 243, 243, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+    margin: 20px auto;
+    max-width: cover;
+    text-align: justify;
+}
+
+/* --- SEÇÃO DE CONTATO (CORRIGIDA) --- */
+#contato {
+    padding: 250px 0;
+    text-align: center;
+}
+
+#contato h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contato ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contato li {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+li :hover {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-decoration: none;  
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* --- FOOTER COM FLEXBOX --- */
+.main-footer {
+    background: #1e293b;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+}
+    
