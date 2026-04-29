@@ -11,6 +11,9 @@ body {
     padding: 0 20px;
 }
 
+.container h3 {
+    text-align: center;
+}
 .main-header {
     background-color: rgb(200, 244, 244);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -24,6 +27,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
@@ -114,13 +118,10 @@ body {
     display: inline-block;
 }
 
-#destinos {
+#destinos, #dicas {
     padding-top: 150px;
 }   
 
-#dicas {
-    padding-top: 150px;
-}
 
 /* --- FEATURES COM GRID LAYOUT --- */
 .features-section h2 {
@@ -132,6 +133,7 @@ body {
     margin-bottom: 12px;
     font-size: 3rem;
 }
+
 
 .feature-card {
     background-color: rgba(199, 243, 243, 0.8);
@@ -175,7 +177,7 @@ body {
     gap: 20px;
 }
 
-.article-card {
+.article-card, .article-card a {
     background-color: rgba(199, 243, 243, 0.8);
     padding: 20px;
     border-radius: 10px;
@@ -185,9 +187,16 @@ body {
     text-align: justify;
 }
 
+.article-card a, .article-card a:active, .article-card a:hover {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 /* --- SEÇÃO DE CONTATO (CORRIGIDA) --- */
 #contato {
-    padding: 250px 0;
+    padding: 155px 0;
+    background: linear-gradient(135deg, rgba(199, 243, 243, 0.8) 0%, rgba(5, 242, 242, 0.8) 100%);
     text-align: center;
 }
 
@@ -207,17 +216,22 @@ body {
 
 #contato li {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 15px;
+    padding: 5px;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px;
+    max-width: 210px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     font-weight: 600;
     text-decoration: none;
 }
 
+#contato li a, #contato li a:active, #contato li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
 li :hover {
-    padding: 15px;
+    padding: 5px;
     border: 2px solid black;
     border-radius: 10px;
     width: 100%;
@@ -232,6 +246,7 @@ li :hover {
     background: #1e293b;
     color: white;
     padding: 10px 0;
+    
 }
 
 .footer-content {
@@ -252,4 +267,25 @@ li :hover {
     color: white;
     text-decoration: none;
 }
-    
+
+
+/* pagina destinos*/
+#cataratas, #noronha, #chapada-diamantina, #serra-da-canastra, #abrolhos, #serra-do-cipo, #parque-da-tijuca, #ilha-do-mel, #bonito {
+    padding-top: 168px;
+}
+
+.feature-card3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.feature-card3 .icon img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
