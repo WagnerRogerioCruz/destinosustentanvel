@@ -81,18 +81,39 @@ body {
 
 /* --- RESPONSIVE PARA CELULAR --- */
 @media (max-width: 768px) {
-        .nav-links {
-            gap: 10px;
-        }
 
-        .nav-links a {
-            font-size: 0.9rem;
-        }
-}
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-@media (max-width: 768px) {
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
     .content-grid {
         grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo svg {
+        width: 140px;
+        height: 140px;
+        top: -25px;
+        left: -25px;
+    }
+
+    .grid {
+        grid-template-areas: 
+            "main"
+            "stats"
+            "info"
+            "chart";
     }
 }
 /* --- HERO SECTION --- */
