@@ -92,56 +92,6 @@ body {
     font-weight: 600;
 }
 
-/* --- RESPONSIVE PARA CELULAR --- */
-@media (max-width: 768px) {
-    html, body {
-    overflow-x: hidden;
-    }
-
-    .nav-links {
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-
-    .content-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
-
-    .logo img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .logo svg {
-        width: 140px;
-        height: 140px;
-        top: -25px;
-        left: -25px;
-    }
-
-    .logo svg text {
-        font-size: 12px; /* 🔥 ESSENCIAL */
-    }
-
-    .grid {
-        grid-template-areas: 
-            "main"
-            "stats"
-            "info"
-            "chart";
-    }
-}
-
 /* --- HERO SECTION --- */
 /* A Seção Hero é o cartão de visitas do seu site! */
 .hero-section {
@@ -344,4 +294,54 @@ li:hover {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* --- RESPONSIVE PARA CELULAR --- */
+@media (max-width: 768px) {
+    html, body {
+    overflow-x: hidden;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo svg {
+        width: 140px;
+        height: 140px;
+        top: -25px;
+        left: -25px;
+    }
+
+    .logo svg text {
+        font-size: 12px; /* 🔥 ESSENCIAL */
+    }
+
+    .grid {
+        grid-template-areas: 
+            "main"
+            "stats"
+            "info"
+            "chart";
+    }
 }
