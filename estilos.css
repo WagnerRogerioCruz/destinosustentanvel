@@ -1,8 +1,4 @@
 
-html, body {
-    overflow-x: hidden;
-}
-
 body {
     font-family: sans-serif, Arial, Helvetica;
     margin: 0;
@@ -25,7 +21,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
+    width: 100%
+   
 }
 
 .flex-nav {
@@ -119,7 +116,7 @@ body {
     }
 
     .logo svg text {
-        font-size: 9px; /* 🔥 ESSENCIAL */
+        font-size: 12px; /* 🔥 ESSENCIAL */
     }
 
     .grid {
