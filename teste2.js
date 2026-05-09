@@ -48,14 +48,14 @@ footer.innerHTML = `
 const hibrido = document.getElementById("hibrido")
 
 hibrido.innerHTML = `
-    <aside class="sidebar">
+        <aside class="sidebar">
             <ul>
               <li>Item 1</li>
               <li>Item 2</li>
             </ul>
-          </aside>
+        </aside>
 
-          <main class="principal">
+        <main class="principal">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime autem ipsa, doloribus repellendus eligendi odio corrupti incidunt quo necessitatibus quae! Voluptatem commodi temporibus quos dolorum culpa nesciunt facilis nobis facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, et eum perspiciatis in hic consectetur quaerat iste quod rem quae quis odit placeat nisi vel? Repellendus voluptas necessitatibus provident nam.</p>
-          </main>
+        </main>
 `
