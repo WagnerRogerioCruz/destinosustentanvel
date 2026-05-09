@@ -26,7 +26,6 @@ cabecalho.innerHTML = `
                         <li><a href="./index.html#dicas">Dicas</a></li>
                         <li><a href="./index.html#destinos">Destinos</a></li>
                         <li><a href="./index.html#contato">Contato</a></li>
-                        <li><a href="./index.html#teste">Página Teste</a></li>
                     </ul>
                 </nav>
         </div>
