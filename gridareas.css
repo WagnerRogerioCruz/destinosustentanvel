@@ -1,0 +1,37 @@
+/* Hybrid Layout */
+.hibrido {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+}
+.sidebar { 
+  padding: 10px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+    
+ /* CSS Grid Areas */
+.grid {
+  padding: 10px;
+  display: grid;
+  grid-template-areas: 
+    "main main stats"
+    "main main info"
+    "chart chart chart";
+    gap: 20px;
+}
+
+.main  { grid-area: main; }
+.stats { grid-area: stats; }
+.info  { grid-area: info; }
+.chart { grid-area: chart; }
+
+.main, .stats, .info, .chart, .sidebar, .principal {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+  max-width:fit-content
+}
+
+

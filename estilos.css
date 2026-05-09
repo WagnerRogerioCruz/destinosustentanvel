@@ -27,7 +27,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .logo {
@@ -91,6 +90,11 @@ body {
         }
 }
 
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* --- HERO SECTION --- */
 /* A Seção Hero é o cartão de visitas do seu site! */
 .hero-section {
@@ -177,6 +181,7 @@ body {
     gap: 20px;
 }
 
+
 .article-card, .article-card a {
     background-color: rgba(199, 243, 243, 0.8);
     padding: 20px;
@@ -191,6 +196,10 @@ body {
     text-decoration: none;
     color: black;
     cursor: pointer;
+}
+
+span {
+    text-decoration:underline;
 }
 
 /* --- SEÇÃO DE CONTATO (CORRIGIDA) --- */
@@ -230,7 +239,7 @@ body {
     text-decoration: none;
 }
 
-li :hover {
+li:hover {
     padding: 5px;
     border: 2px solid black;
     border-radius: 10px;
