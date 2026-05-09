@@ -94,7 +94,10 @@ body {
 
 /* --- RESPONSIVE PARA CELULAR --- */
 @media (max-width: 768px) {
-
+    html, body {
+    overflow-x: hidden;
+    }
+    
     .nav-links {
         gap: 10px;
         flex-wrap: wrap;
