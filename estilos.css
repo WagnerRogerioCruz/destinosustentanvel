@@ -97,7 +97,7 @@ body {
     html, body {
     overflow-x: hidden;
     }
-    
+
     .nav-links {
         gap: 10px;
         flex-wrap: wrap;
@@ -325,10 +325,10 @@ li:hover {
 }
 
 
-/* pagina destinos*/
+/* pagina destinos - perdeu sentido com a nova configuração de uma pagina para cada destino
 #cataratas, #noronha, #chapada-diamantina, #serra-da-canastra, #abrolhos, #serra-do-cipo, #parque-da-tijuca, #ilha-do-mel, #bonito {
     padding-top: 168px;
-}
+}*/
 
 .feature-card3 {
     display: grid;
