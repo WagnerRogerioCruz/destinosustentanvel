@@ -106,11 +106,20 @@ body {
         height: 80px;
     }
 
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
     .logo svg {
         width: 140px;
         height: 140px;
         top: -25px;
         left: -25px;
+    }
+
+    .logo svg text {
+        font-size: 9px; /* 🔥 ESSENCIAL */
     }
 
     .grid {
@@ -121,6 +130,7 @@ body {
             "chart";
     }
 }
+
 /* --- HERO SECTION --- */
 /* A Seção Hero é o cartão de visitas do seu site! */
 .hero-section {
